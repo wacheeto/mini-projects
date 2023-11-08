@@ -6,15 +6,11 @@ import java.io.IOException;
 
 import javax.swing.*;
 
-import Salmo.Main.output;
-
 public class ApplicationMain {
 
     public static boolean registered = false;
     public static void main(String[] args) {
-
         
-
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -87,7 +83,10 @@ public class ApplicationMain {
                         e1.printStackTrace();
                     }
                     System.out.println("Successfully wrote to the file.");
+                    output output_window = new output();
+                    register_button.setEnabled(false);
                     }
+                    
                 }
             });
 
@@ -111,6 +110,12 @@ public class ApplicationMain {
         frame.add(panel);
 
         //frame setup
+        
     }
     
+
+     
+    
+    
+   
 }
